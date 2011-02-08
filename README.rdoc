@@ -1,0 +1,41 @@
+= Browser-prof
+
+This is a simple tool to profile single web requests in Rails using the power or ruby-prof.
+This gem is a based on the discontinued Browser Profiler (http://rubyforge.org/projects/browser-prof).
+
+* Easy walking through complex changes
+* Low overhead in development mode
+* MIT licensed
+
+== Installation & basic usage
+
+Installing browser-prof as a Ruby gem is currently broken, so you need to use it as a plugin:
+
+  $ ./script/plugin install http://github.com/barttenbrinke/browser-prof.git
+
+== Profiling
+
+Add ruby-prof to your Gemfile, run bundle install and start op your server environment.
+To profile, just open any url:
+
+  $ http://0.0.0.0:3000/some/action?browser_profile!
+
+On the botton of your page a html ruby-prof trace will be appended.
+Please note that the action will take lot longer, as it will be passed through ruby-prof.
+
+If you want to profile PDF, Json or post actions, just run the following command:
+  $ http://0.0.0.0:3000/some/action.js?file_profile!
+
+This will write the results to /log/. You can take a look at this through any browser.
+  $ open log/profile_out.html
+
+== Additional information
+
+Browser-profile was designed and built by Aaron Batalion (aaron@hungrymachine.com) and is now maintainer by
+Bart ten Brinke.
+
+Do you have a rails application that is not performing as it should? If you need
+an expert to analyze your application, feel free to contact either Willem van
+Bergen (willem@railsdoctors.com) or Bart ten Brinke (bart@railsdoctors.com).
+
+* railsdoctors homepage: http://railsdoctors.com
