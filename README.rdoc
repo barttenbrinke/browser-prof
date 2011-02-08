@@ -31,8 +31,8 @@ This will write the results to /log/. You can take a look at this through any br
 
 == Additional information
 
-Browser-profile was designed and built by Aaron Batalion (aaron@hungrymachine.com) and is now maintainer by
-Bart ten Brinke.
+Browser-profile was originally designed and built by Aaron Batalion (aaron@hungrymachine.com)
+and is now maintained by Bart ten Brinke.
 
 Do you have a rails application that is not performing as it should? If you need
 an expert to analyze your application, feel free to contact either Willem van
