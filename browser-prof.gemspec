@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
 
   # Do not set the version and date field manually, this is done by the release script
   s.version = "1.2.3"
-  s.date    = "2011-02-08"
+  s.date    = "2011-02-17"
 
   s.summary     = "Rails tool to to profile single requests using ruby-prof."
   s.description = <<-eos
