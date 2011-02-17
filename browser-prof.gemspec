@@ -16,11 +16,11 @@ Gem::Specification.new do |s|
   s.requirements << "ruby-prof gem is required."
 
   s.add_development_dependency('rake')
-  s.add_development_dependency('rspec', '~> 2.0')
+  s.add_development_dependency('rails')
   s.add_development_dependency('ruby-prof')
 
-  s.authors  = ['Willem van Bergen', 'Bart ten Brinke']
-  s.email    = ['willem@railsdoctors.com', 'bart@railsdoctors.com']
+  s.authors  = ['Bart ten Brinke']
+  s.email    = ['bart@railsdoctors.com']
   s.homepage = 'http://railsdoctors.com'
 
   # The files and test_files directives are set automatically by the release script.
