@@ -6,6 +6,7 @@ This gem is a based on the discontinued Browser Profiler (http://rubyforge.org/p
 * Easy walking through complex changes
 * Low overhead in development mode
 * MIT licensed
+* Tested with Rails 2.3.2 & 2.3.10
 
 == Installation & basic usage
 
