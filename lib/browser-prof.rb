@@ -1,8 +1,12 @@
 module ActionController
   class Base
     def process_with_browser_profiling(request, response, method = :perform_action, *arguments)
-      browser_output = request.parameters.key?('browser_profile!') || request.parameters[:params].key?('browser_profile!') || ENV["BROWSER_PROFILE"]
-      file_output = request.parameters.key?('file_profile') || request.parameters[:params].key?('file_profile!') || ENV["FILE_PROFILE"]
+      browser_output  = request.parameters.key?('browser_profile!') ||
+                        (request.parameters[:params] && request.parameters[:params].key?('browser_profile!')) ||
+                        ENV["BROWSER_PROFILE"]
+      file_output     = request.parameters.key?('file_profile!') ||
+                        (request.parameters[:params] && request.parameters[:params].key?('file_profile!')) ||
+                        ENV["FILE_PROFILE"]
 
       if (browser_output or file_output)
         # Only require these files in needed

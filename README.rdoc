@@ -9,9 +9,18 @@ This gem is a based on the discontinued Browser Profiler (http://rubyforge.org/p
 
 == Installation & basic usage
 
-Installing browser-prof as a Ruby gem is currently broken, so you need to use it as a plugin:
+You can run browser-prof either as a plugin or through rubygems.
+For plugin:
 
   $ ./script/plugin install http://github.com/barttenbrinke/browser-prof.git
+
+For rubygems, add the following lines to your Bundle file:
+  gem 'browser-prof'
+  gem 'ruby-prof'
+
+  $ bundle install
+
+Add a require 'browser-prof' to your environment.rb
 
 == Profiling
 
