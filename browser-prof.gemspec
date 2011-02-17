@@ -25,6 +25,6 @@ Gem::Specification.new do |s|
 
   # The files and test_files directives are set automatically by the release script.
   # Do not change them by hand, but make sure to add the files to the git repository.
-  s.files      = %w(MIT-LICENSE README.rdoc Rakefile init.rb lib/browser-prof.rb lib/ruby-prof/graph_html_printer_enhanced.rb lib/ruby-prof/template.rhtml pkg/browser_profiler-1.2.0.gem test/browser_profiler_test.rb)
-  s.test_files = %w(test/browser_profiler_test.rb)
+  s.files      = %w(.gitignore MIT-LICENSE README.rdoc Rakefile browser-prof.gemspec init.rb lib/browser-prof.rb lib/ruby-prof/graph_html_printer_enhanced.rb lib/ruby-prof/template.rhtml pkg/browser_profiler-1.2.0.gem tasks/github-gem.rake test/functional/slow_controller_test.rb test/test_helper.rb)
+  s.test_files = %w(test/functional/slow_controller_test.rb)
 end
