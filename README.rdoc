@@ -16,10 +16,8 @@ For plugin:
   $ ./script/plugin install http://github.com/barttenbrinke/browser-prof.git
 
 For rubygems, add the following lines to your Bundle file:
-  gem 'browser-prof'
-  gem 'ruby-prof'
 
-  $ bundle install
+  gem 'browser-prof'
 
 Add a require 'browser-prof' to your environment.rb
 

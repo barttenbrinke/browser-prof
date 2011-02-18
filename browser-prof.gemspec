@@ -15,9 +15,9 @@ Gem::Specification.new do |s|
 
   s.requirements << "ruby-prof gem is required."
 
+  s.add_dependency('ruby-prof')
   s.add_development_dependency('rake')
   s.add_development_dependency('rails', '~> 2.3.2')
-  s.add_development_dependency('ruby-prof')
 
   s.authors  = ['Bart ten Brinke']
   s.email    = ['bart@railsdoctors.com']
