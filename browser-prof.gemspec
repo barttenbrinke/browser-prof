@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name    = "browser-prof"
 
   # Do not set the version and date field manually, this is done by the release script
-  s.version = "1.2.5"
+  s.version = "1.2.6"
   s.date    = "2011-02-17"
 
   s.summary     = "Rails tool to to profile single requests using ruby-prof."
@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.add_dependency('ruby-prof')
   s.add_development_dependency('rake')
   s.add_development_dependency('rails', '~> 2.3.2')
+  s.add_development_dependency('sqlite3')
 
   s.authors  = ['Bart ten Brinke']
   s.email    = ['bart@railsdoctors.com']
