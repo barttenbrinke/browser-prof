@@ -17,8 +17,12 @@ Gem::Specification.new do |s|
 
   s.add_dependency('ruby-prof')
   s.add_development_dependency('rake')
-  s.add_development_dependency('rails', '~> 2.3.2')
-  s.add_development_dependency('sqlite3')
+  s.add_development_dependency('rails', '2.3.2')
+  if defined?(JRUBY_VERSION)
+    s.add_development_dependency('jdbc-sqlite3')
+  else
+    s.add_development_dependency('sqlite3')
+  end
 
   s.authors  = ['Bart ten Brinke']
   s.email    = ['bart@railsdoctors.com']
