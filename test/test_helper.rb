@@ -4,7 +4,7 @@ rails_path = File.expand_path(File.dirname(__FILE__) + "/../rails_test/config/en
 
 unless File.exists?(rails_path)
   p 'Rails not found, please run:'
-  p '$ rails rails_test'
+  p '$ bundle exec rails rails_test'
   exit
 end
 require rails_path
